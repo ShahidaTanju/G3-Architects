@@ -25,6 +25,16 @@
     border-radius: 8px;
 }
 
+main {
+    max-width: 1150px;
+    margin: 0 auto;
+
+}
+
+main>section {
+    margin-top: 130px;
+}
+
 /* dark-1 */
 .text-gray {
     color: #131313;
@@ -69,6 +79,8 @@
 .banner {
     max-width: 1200px;
     margin: 0 auto;
+    padding-bottom: 20px;
+
 }
 
 
@@ -96,5 +108,66 @@
 
 .banner-image {
     width: 1240px;
-    height: 800px;
+    height: 700px;
+}
+
+/*team ansd features related styles  */
+
+.teams {
+    align-items: center;
+}
+
+.team-img-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.our-features {
+    margin-left: 90px;
+    max-width: 530px;
+}
+
+.feature-title {
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+
+#quick-list {
+    font-weight: 500;
+}
+
+.text-primary {
+    color: #ff900f;
+}
+
+/* responsive media query */
+
+@media screen and (max-width: 576px) {
+
+    .navbar,
+    .nav-link,
+    .teams {
+        flex-direction: column;
+    }
+
+    .banner,
+    .navbar {
+        max-width: 800px;
+    }
+
+    .banner-image {
+        width: 500px;
+        height: 350px;
+        margin-left: 20px;
+    }
+
+    .team-img-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .our-features {
+        margin-left: 15px;
+    }
+
 }
