@@ -35,6 +35,11 @@ main>section {
     margin-top: 130px;
 }
 
+.section-title {
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+
 /* dark-1 */
 .text-gray {
     color: #131313;
@@ -128,10 +133,7 @@ main>section {
     max-width: 530px;
 }
 
-.feature-title {
-    font-size: 2.8rem;
-    font-weight: 700;
-}
+
 
 #quick-list {
     font-weight: 500;
@@ -139,6 +141,48 @@ main>section {
 
 .text-primary {
     color: #ff900f;
+}
+
+/* features we enjoy */
+
+.feature-card-container {
+    width: 450px;
+    height: 800px;
+}
+
+.feature-img {
+    width: 600px;
+    height: 1050px;
+    padding-right: 30px;
+}
+
+.features {
+    gap: 140px;
+}
+
+#feature-section-title {
+    border-left: 5px solid #ff900f;
+    padding-left: 20px;
+}
+
+.feature-card {
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06);
+    margin-bottom: 20px;
+}
+
+.feature-card,
+.feature-title {
+    font-weight: 600;
+    font-size: 1.25rem;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.feature-description {
+    font-size: 16px;
+    margin: 2px;
 }
 
 /* responsive media query */
@@ -168,6 +212,23 @@ main>section {
 
     .our-features {
         margin-left: 15px;
+    }
+
+    .feature-card-container {
+        width: 550px;
+        height: 750px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .feature-img {
+        width: 550px;
+        height: 850px;
+    }
+
+    .features {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
     }
 
 }
