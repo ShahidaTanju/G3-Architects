@@ -160,9 +160,22 @@ main>section {
     gap: 140px;
 }
 
+#experience-badge {
+    padding: 45px 42px;
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-left: -100px;
+    margin-top: -100px;
+}
+
 #feature-section-title {
     border-left: 5px solid #ff900f;
     padding-left: 20px;
+}
+
+#experience-year {
+    font-size: 3.5rem;
+    font-weight: 600;
 }
 
 .feature-card {
@@ -184,6 +197,48 @@ main>section {
     font-size: 16px;
     margin: 2px;
 }
+
+/* some facts related */
+
+.facts-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.fact-card {
+    border: 1px solid #ff900f;
+    width: 220px;
+    height: 220px;
+    border-radius: 8px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.fact-number {
+    font-size: 2.8rem;
+    font-weight: 600;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.fact-name {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.fact-description {
+    max-width: 540px;
+    margin-top: 3px;
+    padding-bottom: 40px;
+}
+
+.section-title {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
 
 /* responsive media query */
 
@@ -222,7 +277,7 @@ main>section {
     }
 
     .feature-img {
-        width: 550px;
+        width: 500px;
         height: 850px;
     }
 
@@ -230,5 +285,11 @@ main>section {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
     }
+
+    #experience-badge {
+        margin-left: 20px;
+        margin-top: 20px;
+    }
+
 
 }
