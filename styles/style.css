@@ -260,13 +260,29 @@ main>section {
 }
 
 
+footer {
+    height: 80px;
+    width: 1000px;
+    background-color: #FFF4E7;
+    margin-left: 160px;
+    margin-top: 60px;
+}
+
+.footer-description {
+    text-align: center;
+    padding-top: 30px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
 /* responsive media query */
 
 @media screen and (max-width: 576px) {
 
     .navbar,
     .nav-link,
-    .teams {
+    .teams,
+    .features {
         flex-direction: column;
     }
 
@@ -321,6 +337,12 @@ main>section {
     .sponsor-companies {
         justify-items: center;
         gap: 50px;
+    }
+
+    footer {
+        height: 70px;
+        width: 550px;
+        margin-left: 10px;
     }
 
 }
